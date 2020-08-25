@@ -9,7 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/chart_network.css" />
+    <link rel="stylesheet" href="css/text_frequency.css" />
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
@@ -26,65 +28,52 @@
 </head>
 <body>
   <a id="goto_top"></a>
-  <div style="position: fixed; width: 100%; background: #232426; z-index: 100;">
-    <span style="float: right; xmargin-top: 2%; margin-top: 23px;">
+  <div class="top-nav">
+    <span>
       <button class="btn btn-primary menu" onclick="location.href='#goto_top'">Home</button>
       <button class="btn btn-primary menu" onclick="location.href='#goto_frequency'">Text Frequency</button>
       <button class="btn btn-primary menu" onclick="location.href='#goto_graph'">Network Graph</button>
-      <button class="btn btn-primary menu">Sample Work</button>
+      <button class="btn btn-primary menu" style="display: none;">Sample Work</button>
     </span>
     <h1>LINDA<br />KATO</h1>
   </div>
 
-
-
   <section id="section_text">
-    <table style="xmargin: auto; width: 85%; height: 450px; background-image: url('images/path1.jpg'); background-repeat: no-repeat; background-size: 100% 100%;"><tbody>
+    <table><tbody>
       <tr>
-
-        <td style="width: 75%; background-color: rgba(0, 0, 0, 0.75); xbackground-color: rgba(255, 255, 255, 0.75); color: #fff; padding: 50px 15%; vertical-align: middle;">
-          <p style="font-family: Arizonia; font-size: 20pt; text-align: justify;">
-          I have a passion for developing <span style="font-family: Raleway; font-size: 1.15em;">UI</span>s that allow real people to take advantage of cutting-edge <span style="font-family: Helvetica; font-size: 1.15em;">AI</span> technologies today.
+        <td class="tagline">
+          <p>
+              I have a passion for developing <span>UI</span>s that allow real
+              people to take advantage of cutting-edge <span>AI</span>
+              technologies today.
           </p>
         </td>
-        <td style="min-width: 40px; background-color: rgba(0, 0, 0, 0.75); border-right: 3px solid #f1a214; vertical-align: top; font-size: 10pt;">
-          <div style="text-align: right; padding: 20px 0px; padding-right: 10px;">
-
-            <div style="position: absolute; top: 20px;">2001</div>
-            <div style="position: absolute; top: 80px;">2004</div>
-            <div style="position: absolute; top: 140px;">2007</div>
-            <div style="position: absolute; top: 170px;">2008</div>
-            <div style="position: absolute; top: 230px;">2016</div>
-            <div style="position: absolute; top: 260px;">2017</div>
-            <div style="position: absolute; top: 290px;">2018</div>
-            <div style="position: absolute; top: 350px;">2020</div>
+        <td class="tech-dates">
+          <div>
+            <div style="top: 20px;">2001</div>
+            <div style="top: 80px;">2004</div>
+            <div style="top: 140px;">2007</div>
+            <div style="top: 170px;">2008</div>
+            <div style="top: 230px;">2016</div>
+            <div style="top: 260px;">2017</div>
+            <div style="top: 290px;">2018</div>
+            <div style="top: 350px;">2020</div>
           </div>
         </td>
-
-        <td style="width: 25%; min-width: 100px; background-color: #232426; xborder-right: 2px solid #fff; vertical-align: top; font-size: 10pt;">
-          <div style="xtext-align: right; padding: 20px 0px; padding-left: 10px;">
-            <div style="position: absolute; top: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Software Tester</div>
-            <div style="position: absolute; top: 80px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Struts, J2EE</div>
-            <div style="position: absolute; top: 140px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Tapestry</div>
-            <div style="position: absolute; top: 170px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">JQuery, Bootstrap, D3</div>
-            <div style="position: absolute; top: 230px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">JQuery, Bootstrap, D3, Ruby on Rails</div>
-            <div style="position: absolute; top: 260px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">JQuery, Bootstrap, D3, React</div>
-            <div style="position: absolute; top: 290px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">JQuery, Bootstrap, D3</div>
-            <div style="position: absolute; top: 345px; font-family: Arizonia; font-size: 16pt; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Ready for my next adventure!</div>
+        <td class="tech">
+          <div>
+            <div style="top: 20px;">Software Tester</div>
+            <div style="top: 80px;">Struts, J2EE</div>
+            <div style="top: 140px;">Tapestry</div>
+            <div style="top: 170px;">JQuery, Bootstrap, D3</div>
+            <div style="top: 230px;">JQuery, Bootstrap, D3, Ruby on Rails</div>
+            <div style="top: 260px;">JQuery, Bootstrap, D3, React</div>
+            <div style="top: 290px;">JQuery, Bootstrap, D3</div>
+            <div style="top: 345px;">Ready for my next adventure!</div>
           </div>
         </td>
-
       </tr>
     </tbody></table>
-
-
-<!--
-    <div style="position: absolute;">
-      <img src="images/path4.jpg" style="height: 60vh; min-height: 400px; width: 100%; opacity: 90%;" />
-    </div>
-    <p>
-    I have a passion for developing UIs that allow real people to take advantage of cutting-edge AI technologies today.
-  </p>-->
   </section>
 
   <a id="goto_frequency"></a>
@@ -139,8 +128,9 @@ Collaborated with a UI designer to build an interactive relationship network gra
 IBM, I/T Specialist, 2001 –2004
 Created, executed, and recorded QA test cases according to the specifications and requirements that were provided.
           </textarea>
-          <div style="margin: 5px 0px; text-align: right;">
-            Max Number of Words: <input id="maxNumOfWords" type="text" value="25" class="form-control" />
+          <div class="frequency-control">
+            Max Number of Words:
+            <input id="maxNumOfWords" type="text" value="25" class="form-control" />
             <button onclick="getFrequency(); return false;" class="btn btn-primary">Go</button>
           </div>
         </form>
@@ -157,12 +147,11 @@ Created, executed, and recorded QA test cases according to the specifications an
 </body>
 
 <script>
-var frequency = new TextFrequency("frequency");
+let frequency = new TextFrequency("frequency");
 
 feather.replace();
-var data = {};
 
-var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+let width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 if (width < 400) {
   width = 300;
 }
@@ -170,9 +159,8 @@ else {
   width -= 110; // For padding;
 }
 
-console.log("width: ", width);
-var network = new NetworkGraph("network", width, "500", { top: 0, right: 0, bottom: 0, left: 0});
-network.render(data);
+let network = new NetworkGraph("network", width, "500", { top: 0, right: 0, bottom: 0, left: 0});
+network.render({});
 
 function getFrequency() {
   var frequencyText = document.getElementById("frequencyText").value;
@@ -184,7 +172,6 @@ function getFrequency() {
 
   frequency.execute(frequencyText, maxNumOfWords);
 }
-
 </script>
 
 </html>
