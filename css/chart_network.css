@@ -1,0 +1,12 @@
+/**
+ * Network Graph CSS
+ */
+
+#section_graph {
+  xtext-align: center;
+}
+
+g > line {
+  fill: #555;
+  stroke: #555;
+}

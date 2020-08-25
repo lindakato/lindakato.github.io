@@ -1,0 +1,27 @@
+/**
+ * Text Frequency CSS
+ */
+
+.frequency-control {
+  margin: 5px 0px;
+  text-align: right;
+}
+
+.frequency {
+  line-height: 30pt;
+  padding: 1% 5% !important;
+  text-align: center;
+}
+
+.frequency > div {
+  color: #206eb1;
+  color: #f1a214;
+  display: inline-block;
+  font-family: "Helvetica";
+  margin: 5px 10px;
+}
+
+#maxNumOfWords {
+  display: inline-block;
+  width: 100px;
+}
