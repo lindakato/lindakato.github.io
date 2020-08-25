@@ -1,1 +1,0 @@
-# lindakato.github.io
