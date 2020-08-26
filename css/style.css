@@ -139,8 +139,8 @@ div.top-nav > span {
 }
 
 #section_text > table td.tech > div > div:last-of-type {
-  font-family: Arizonia;
-  font-size: 16pt;
+  xfont-family: Arizonia;
+  xfont-size: 16pt;
 }
 
 
