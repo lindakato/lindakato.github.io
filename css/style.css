@@ -35,7 +35,7 @@ h1 > div {
 
 body > section {
   color: #fff;
-  margin-bottom: 500px;
+  margin-bottom: 100vh;
   min-height: 400px;
   padding: 5px;
   position: relative;
@@ -69,6 +69,18 @@ div.top-nav > span {
   background-size: 100% 100%;
   height: 450px;
   width: 85%;
+}
+
+#section_text > table,
+#section_text > table tr,
+#section_text > table th,
+#section_text > table tbody,
+#section_text > table td {
+  border-top:2px solid #232426;
+  border-left:2px solid #232426;
+  border-right:2px solid #232426;
+  border-bottom:2px solid #232426;
+  border-collapse: collapse;
 }
 
 #section_text > table td.tagline {
