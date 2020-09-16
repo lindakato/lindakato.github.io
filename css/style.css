@@ -33,6 +33,10 @@ h1 > div {
   margin-left: -3%;
 }
 
+p.description {
+  padding: 5px 10px;
+}
+
 body > section {
   color: #fff;
   margin-bottom: 100vh;
